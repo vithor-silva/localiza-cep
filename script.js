@@ -12,7 +12,10 @@ const reloadButton = document.getElementById("reloadButton")
 const getValue = () => {
   const inputValue = inputcep.value;
   buscaCep(inputValue);
-  result.style.display = "block";
+  result.style.display = "flex";
+  result.style.aligitems = "center";
+  result.style.justiyContent = "center"
+  result.style.flexDirection = "column"
 };
 
 const buscaCep = (inputValue) => {
@@ -35,3 +38,4 @@ reloadButton.addEventListener("click", reloadPage)
 function reloadPage() {
     location.reload()
 }
+
