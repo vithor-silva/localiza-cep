@@ -14,6 +14,8 @@ main {
     justify-content: center;
     flex-direction: row;
     margin-bottom: 5%;
+    height: 100%;
+    width: 100%;
 }
 
 h1 {
@@ -50,6 +52,14 @@ button:hover {
     background-color: #41dd46;
 }
 
+#newConsult {
+    background-color: rgba(0, 26, 255, 0.753);
+}
+
+#reloadPage {
+    background-color: red;
+}
+
 .result {
     display: none;
     align-items: center;
@@ -62,6 +72,11 @@ button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
     height: 50%;
     width: 70%;
+    background-color: rgba(7, 24, 172, 0.397);
+}
+
+h2 {
+    color: green;
 }
 
 span {
