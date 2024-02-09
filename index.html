@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Localiza CEP</title>
+  </head>
+  <body>
+    <h1>Localiza CEP</h1>
+    <label for="inputcep">Insira seu cep</label>
+    <input type="text" name="inputcep" id="inputcep" />
+    <button onclick="getValue()">Consultar</button>
+    <div class="result">
+      <p>CEP: <span id="cep">01001-000</span></p>
+      <p>logradouro: <span id="logradouro">Praça da Sé</span></p>
+      <p>complemento <span id="complemento">Lado impar</span></p>
+      <p>bairro: <span id="bairro">Sé</span></p>
+      <p>localidade: <span id="localidade">São Paulo</span></p>
+      <p>uf: <span id="uf">SP</span></p>
+      <p>Ibge: <span id="ibge">3550308</span></p>
+      <button id="reloadButton">Nova consulta</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
