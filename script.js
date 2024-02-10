@@ -15,6 +15,10 @@ const imageError = document.getElementById("img-states-error")
 const imageOk = document.getElementById("img-states-ok")
 const resultData = document.getElementById("result-data")
 
+
+
+
+
 const getValue = () => {
   let inputValue = inputcep.value
   if(inputValue.length !== 8) {
@@ -24,7 +28,7 @@ const getValue = () => {
     imageOk.style.display = "none"
     imageError.style.display = "block"
     resultData.style.display = "none"
-  }
+  } 
     buscaCep(inputValue);
     result.style.display = "flex";
     result.style.alignItems = "center";
