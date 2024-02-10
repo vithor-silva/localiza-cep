@@ -13,9 +13,10 @@
     </nav>
     <main>
     <label for="inputcep">Insira seu cep</label>
+    <a  id="redirect" href="screens/index.html" target="_blank">Não sei meu cep</a>
     <input type="number" name="inputcep" id="inputcep" placeholder="Insira seu cep" />
     <div class="buttons">
-      <button onclick="getValue()">Consultar</button>
+      <button id="consult" onclick="getValue()">Consultar</button>
       <button id="reloadPage" onclick="reloadPage()">Limpar</button>
     </div>
     <div class="result">
@@ -27,16 +28,16 @@
       <p id="info-cep"></p>
       <div id="result-data">
       <p>CEP: <span id="cep">01001-000</span></p>
-      <p>logradouro: <span id="logradouro">Praça da Sé</span></p>
-      <p>complemento: <span id="complemento">Lado impar</span></p>
-      <p>bairro: <span id="bairro">Sé</span></p>
-      <p>localidade: <span id="localidade">São Paulo</span></p>
-      <p>uf: <span id="uf">SP</span></p>
-      <p>Ibge: <span id="ibge">3550308</span></p>
+      <p>LOGRADOURO: <span id="logradouro">Praça da Sé</span></p>
+      <p>COMPLEMENTO: <span id="complemento">Lado impar</span></p>
+      <p>BAIRRO: <span id="bairro">Sé</span></p>
+      <p>LOCALIDADE: <span id="localidade">São Paulo</span></p>
+      <p>UF: <span id="uf">SP</span></p>
+      <p>IBGE <span id="ibge">3550308</span></p>
       <button onclick="reloadPage()" id="newConsult">Nova consulta</button>
      </div>
     </div>
   </main>
-    <script src="script.js"></script>
+    <script src="consultCEP.js"></script>
   </body>
 </html>

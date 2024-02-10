@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Para garantir que a barra de navegação esteja sempre acima do conteúdo */
+}
+
+.navbar {
+    background-color: rgba(0, 26, 255, 0.753);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 50px; /* Altura da barra de navegação */
+    padding: 10px;
+    width: 100%;
+}
+
+body{
+    padding-top: 50px; /* Adiciona um espaço para o conteúdo para evitar que fique atrás da barra de navegação */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 100%;
+    max-width: 350px;
+    padding: 2%;
+}
+
+.input-container{
+    position: relative;
+    margin: 30px 0;
+}
+.input-container label{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    color: rgb(150,150,150);
+    cursor: text;
+    transition: 0.5s ease-in-out;
+}
+
+.input{
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid rgb(200,200,200);
+    outline: 0;
+    font-size: 16px;
+    color: rgb(80,80,80);
+    transition: 0.5s ease-in-out;
+}
+
+.input:focus,
+.input:valid{
+    border-bottom: 2px solid cornflowerblue;
+}
+.input:focus ~ label,
+.input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: cornflowerblue;
+}
