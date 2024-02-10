@@ -19,7 +19,13 @@
       <button id="reloadPage" onclick="reloadPage()">Limpar</button>
     </div>
     <div class="result">
-      <h2>CEP ENCONTRADO!</h2>
+      <div class="states-container">
+        <h2 id="states">CEP ENCONTRADO!</h2>
+        <img id="img-states-ok" src="assets/correto-imagem-png.png" alt="imagem correto">
+        <img id="img-states-error" src="assets/error-imagem-png.png" alt="imagem error">
+      </div>
+      <p id="info-cep"></p>
+      <div id="result-data">
       <p>CEP: <span id="cep">01001-000</span></p>
       <p>logradouro: <span id="logradouro">Praça da Sé</span></p>
       <p>complemento: <span id="complemento">Lado impar</span></p>
@@ -28,6 +34,7 @@
       <p>uf: <span id="uf">SP</span></p>
       <p>Ibge: <span id="ibge">3550308</span></p>
       <button onclick="reloadPage()" id="newConsult">Nova consulta</button>
+     </div>
     </div>
   </main>
     <script src="script.js"></script>
