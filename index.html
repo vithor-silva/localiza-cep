@@ -13,7 +13,7 @@
     </nav>
     <main>
     <label for="inputcep">Insira seu cep</label>
-    <input type="text" name="inputcep" id="inputcep" placeholder="Insira seu cep" />
+    <input type="number" name="inputcep" id="inputcep" placeholder="Insira seu cep" />
     <div class="buttons">
       <button onclick="getValue()">Consultar</button>
       <button id="reloadPage" onclick="reloadPage()">Limpar</button>
@@ -27,7 +27,7 @@
       <p>localidade: <span id="localidade">São Paulo</span></p>
       <p>uf: <span id="uf">SP</span></p>
       <p>Ibge: <span id="ibge">3550308</span></p>
-      <button id="newConsult">Nova consulta</button>
+      <button onclick="reloadPage()" id="newConsult">Nova consulta</button>
     </div>
   </main>
     <script src="script.js"></script>
